@@ -1,4 +1,4 @@
-html {
+html,body {
     height: 100%;
 }
 
@@ -12,15 +12,46 @@ body {
     background-attachment: fixed;
 }
 
-.wrapper {
-	width:1280px;
-	height:800px;
-	position:absolute;
-	left:50%;
-	top:50%;
-	margin:-400px 0 0 -640px;
+.page { 
+	display:table;
+	overflow:hidden;
+	margin:0px auto;
+	height:100%;
+	width:100%;
+	max-width: 1280px;
 }
-.wrapper img {
+
+.content_container {
+	display:table-cell;
+	vertical-align: middle;
+}
+
+.content {
+	position: relative;
+}
+
+.content img {
 	width:100%;
 	display:block;
+}
+
+.aerosol {
+	background: #0039a6;
+	display:block;
+	position: absolute;
+	width: 10%;
+	height: 10%;
+	top: 50%;
+	left:50%;
+	border-radius: 5px;
+}
+
+.aerosol {
+    -webkit-animation: glow 1s infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    to {
+        box-shadow: -1px 1px 20px white;
+    }
 }
