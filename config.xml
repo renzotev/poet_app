@@ -14,8 +14,7 @@ A simple PhoneGap Build application.
 Your Name
 </author>
 
-<icon src="icon.jpg">
-<gap:splash src="splash.png">
+<gap:splash src="splash.png" />
 <preference name="orientation" value="landscape" />
 <preference name="fullscreen" value="true" />
 
