@@ -47,7 +47,7 @@ body {
 }
 
 .aerosol {
-    -webkit-animation: glow 2s infinite alternate;
+    -webkit-animation: glow 1s infinite alternate;
 }
 
 @-webkit-keyframes glow {
