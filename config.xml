@@ -20,6 +20,7 @@ Your Name
 <preference name="fullscreen" value="true" />
 
 <gap:platform name="android" />
+<preference name="DisallowOverscroll" value="true" />
 
 <icon src="icons/android/ldpi.png" gap:platform="android" gap:density="ldpi" />
 <icon src="icons/android/mdpi.png" gap:platform="android" gap:density="mdpi" />

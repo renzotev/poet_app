@@ -47,11 +47,11 @@ body {
 }
 
 .aerosol {
-    -webkit-animation: glow 1s infinite alternate;
+    -webkit-animation: glow 2s infinite alternate;
 }
 
 @-webkit-keyframes glow {
     to {
-        box-shadow: -1px 1px 20px white;
+        box-shadow: 0 0 20px 5px white;
     }
 }
