@@ -16,8 +16,10 @@ Your Name
 
 <icon src"icon.jpg"
 <gap:splash src="splash.png"
-<preference name="orientation" value="portrait" />
+<preference name="orientation" value="landscape" />
 <preference name="fullscreen" value="true" />
+
+<gap:platform name="android" />
 
 <icon src="icons/android/ldpi.png" gap:platform="android" gap:density="ldpi" />
 <icon src="icons/android/mdpi.png" gap:platform="android" gap:density="mdpi" />
