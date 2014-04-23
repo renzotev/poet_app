@@ -22,7 +22,7 @@ Your Name
 <gap:platform name="android" />
 <preference name="DisallowOverscroll" value="true" />
 
-<gap:plugin name="org.apache.cordova.media" />
+<gap:plugin name="org.apache.cordova.media" version="0.2.8" />
 
 <icon src="icons/android/ldpi.png" gap:platform="android" gap:density="ldpi" />
 <icon src="icons/android/mdpi.png" gap:platform="android" gap:density="mdpi" />

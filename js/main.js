@@ -1,6 +1,9 @@
-function playAudio(id) {
-    var audioElement = document.getElementById(id);
-    var url = audioElement.getAttribute('src');
+$(".aerosol").on("click", function () {
+    var audio = $(this).attr("sound");
+    playAudio(audio);
+});
+
+function playAudio(url) {
     var my_media = new Media(url,
             // success callback
              function () { console.log("playAudio():Audio Success"); },
