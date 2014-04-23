@@ -4,7 +4,7 @@ $(".aerosol").on("click", function () {
 });
 
 function playAudio(url) {
-    var my_media = new Media(url,
+    var my_media = new Media("/android_asset/www/sound/"+url,
             // success callback
              function () { console.log("playAudio():Audio Success"); },
             // error callback
