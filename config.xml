@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+    xmlns:gap = "http://phonegap.com/ns/1.0"
+    id        = "com.phonegap.example"
+    version   = "1.0.0">
+
+<name>PhoneGap Build Application</name>
+
+<description>
+A simple PhoneGap Build application.
+</description>
+
+<author href="https://example.com" email="you@example.com">
+Your Name
+</author>
+
+<icon src"icon.jpg"
+<gap:splash src="splash.png"
+<preference name="orientation" value="portrait" />
+<preference name="fullscreen" value="true" />
+
+<icon src="icons/android/ldpi.png" gap:platform="android" gap:density="ldpi" />
+<icon src="icons/android/mdpi.png" gap:platform="android" gap:density="mdpi" />
+<icon src="icons/android/hdpi.png" gap:platform="android" gap:density="hdpi" />
+<icon src="icons/android/xhdpi.png" gap:platform="android" gap:density="xhdpi" />
+
+
+</widget>
