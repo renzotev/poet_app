@@ -1,4 +1,8 @@
-$(".aerosol").on("click", function () {
+setTimeout(function(){
+       $("#aerosol").addClass("fade");
+   }, 2000);
+
+$("#aerosol").on("click", function () {
     var audio = $(this).attr("sound");
     playAudio(audio);
 });
