@@ -1,12 +1,3 @@
-setTimeout(function(){
-       $("#aerosol").addClass("fade");
-   }, 2000);
-
-$("#aerosol").on("click", function () {
-    var audio = $(this).attr("sound");
-    playAudio(audio);
-});
-
 function playAudio(url) {
     var my_media = new Media("/android_asset/www/sound/"+url,
             // success callback
@@ -17,3 +8,41 @@ function playAudio(url) {
            // Play audio
     my_media.play();
 }
+
+var do_aerosol = function () {
+  $(".clean-aerosol").addClass("fade");
+    $("#aerosol").removeClass("fade");
+    setTimeout(function(){
+        $("#aerosol").css("display", "none");
+        $("#pastilla").addClass("fade");
+   }, 1000);
+
+    var audio = $(this).attr("sound");
+    playAudio(audio);
+};
+
+var do_pastilla = function () {
+    $(".clean-pastilla").addClass("fade");
+    $("#pastilla").removeClass("fade");
+    setTimeout(function(){
+        $(".final-msj").addClass("fade");
+        $("#pastilla").css("display", "none");
+        playAudio("bells-large.mp3");
+   }, 2000);
+
+    var audio = $(this).attr("sound");
+    playAudio(audio);
+};
+
+$("#aerosol").on("click", function () {
+    do_aerosol();
+});
+
+$("#pastilla").on("click", function () {
+    do_pastilla();
+    $(this).css("display", "none");
+});
+
+setTimeout(function(){
+       $("#aerosol").addClass("fade");
+   }, 2000);
