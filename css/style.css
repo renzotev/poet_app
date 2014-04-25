@@ -67,7 +67,6 @@ body {
 	-webkit-mask-size: 2560px 1600px;
 	display:block !important;
 	opacity: 1 !important;
-	z-index: 88;
 	-webkit-mask-image: -webkit-gradient(linear, left top, right top, 
 			color-stop(0.00,  rgba(0,0,0,1)),
 			color-stop(0.35,  rgba(0,0,0,1)),
@@ -79,8 +78,6 @@ body {
 
 .content .slides.final-msj.wipe {
 	-webkit-mask-position: -1200px -750px;
-	z-index:0;
-	
 }
 
 
