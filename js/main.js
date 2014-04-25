@@ -26,7 +26,11 @@ var do_pastilla = function () {
     $(".final-msj").css("display", "block");
     setTimeout(function(){
 <<<<<<< HEAD
+<<<<<<< HEAD
         $(".final-msj").removeClass("wipe");
+=======
+        $(".final-msj").addClass("fade");
+>>>>>>> parent of f9ab33f... init
 =======
         $(".final-msj").addClass("fade");
 >>>>>>> parent of f9ab33f... init
@@ -45,7 +49,11 @@ var init = function () {
   $("#pastilla").css("display", "block");
   $("#aerosol").addClass("fade");
 <<<<<<< HEAD
+<<<<<<< HEAD
   $(".final-msj").addClass("wipe");
+=======
+  $(".final-msj").removeClass("fade");
+>>>>>>> parent of f9ab33f... init
 =======
   $(".final-msj").removeClass("fade");
 >>>>>>> parent of f9ab33f... init
