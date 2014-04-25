@@ -29,9 +29,9 @@ body {
 	display:table;
 	overflow:hidden;
 	margin:0px auto;
-	width: 1280px;
-	height: 800px;
-	max-width: 1280px;
+	width: 1200px;
+	height: 750px;
+	max-width: 1200px;
 }
 
 .content_container {
@@ -52,8 +52,8 @@ body {
 
 .content .slides {
 	position: absolute;
-	width: 1280px;
-	height: 800px;
+	width: 1200px;
+	height: 750px;
 	display:block;
 	top:0;
 	left: 0;
@@ -71,7 +71,7 @@ body {
 			color-stop(0.50,  rgba(0,0,0,0)),
 			color-stop(0.75,  rgba(0,0,0,0)),
 			color-stop(1.00,  rgba(0,0,0,0)));
-	-webkit-mask-position: -1280px -800px;
+	-webkit-mask-position: -1200px -750px;
 }
 
 .content .slides.final-msj.fade {
