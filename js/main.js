@@ -25,7 +25,11 @@ var do_pastilla = function () {
     $("#pastilla").removeClass("fade");
     $(".final-msj").css("display", "block");
     setTimeout(function(){
+<<<<<<< HEAD
         $(".final-msj").removeClass("wipe");
+=======
+        $(".final-msj").addClass("fade");
+>>>>>>> parent of f9ab33f... init
         $("#pastilla").css("display", "none");
         playAudio("bells-large.mp3");
    }, 2000);
@@ -40,7 +44,11 @@ var init = function () {
   $("#aerosol").css("display", "block");
   $("#pastilla").css("display", "block");
   $("#aerosol").addClass("fade");
+<<<<<<< HEAD
   $(".final-msj").addClass("wipe");
+=======
+  $(".final-msj").removeClass("fade");
+>>>>>>> parent of f9ab33f... init
 }
 
 $(".final-msj").on("click", function () {
