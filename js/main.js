@@ -10,7 +10,7 @@ function playAudio(url) {
 }
 
 var do_aerosol = function () {
-    $(".clean-aerosol").addClass("fade");
+    $(".first").removeClass("fade");
     $("#aerosol").removeClass("fade");
     setTimeout(function(){
         $("#aerosol").css("display", "none");
@@ -21,10 +21,10 @@ var do_aerosol = function () {
 };
 
 var do_pastilla = function () {
-    $(".clean-pastilla").addClass("fade");
+    $(".clean-aerosol").removeClass("fade");
     $("#pastilla").removeClass("fade");
     setTimeout(function(){
-        $(".final-msj").addClass("wipe");
+        $(".final-msj").removeClass("wipe");
         $("#pastilla").css("display", "none");
         playAudio("bells-large.mp3");
    }, 2000);
@@ -34,12 +34,12 @@ var do_pastilla = function () {
 
 
 var init = function () {
-  $(".clean-pastilla").removeClass("fade");
-  $(".clean-aerosol").removeClass("fade");
+  $(".first").addClass("fade");
+  $(".clean-aerosol").addClass("fade");
   $("#aerosol").css("display", "block");
   $("#pastilla").css("display", "block");
   $("#aerosol").addClass("fade");
-  $(".final-msj").removeClass("wipe");
+  $(".final-msj").addClass("wipe");
 }
 
 $(".final-msj").on("click", function () {
