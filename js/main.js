@@ -37,7 +37,9 @@ var init = function () {
   $(".clean-pastilla").removeClass("fade");
   $(".clean-aerosol").removeClass("fade");
   $("#aerosol").css("display", "block");
+  $("#pastilla").css("display", "block");
   $("#aerosol").addClass("fade");
+  $(".final-msj").removeClass("fade");
 }
 
 $(".final-msj").on("click", function () {
