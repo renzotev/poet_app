@@ -17,8 +17,7 @@ var do_aerosol = function () {
         $("#pastilla").addClass("fade");
    }, 1000);
 
-    var audio = $(this).attr("sound");
-    playAudio(audio);
+    playAudio("bells-short.mp3");
 };
 
 var do_pastilla = function () {
@@ -30,8 +29,7 @@ var do_pastilla = function () {
         playAudio("bells-large.mp3");
    }, 2000);
 
-    var audio = $(this).attr("sound");
-    playAudio(audio);
+    playAudio("bells-short.mp3");
 };
 
 $("#aerosol").on("click", function () {
