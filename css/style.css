@@ -78,6 +78,7 @@ body {
 
 .content .slides.final-msj.wipe {
 	-webkit-mask-position: -1200px -750px;
+	display: none;
 }
 
 
