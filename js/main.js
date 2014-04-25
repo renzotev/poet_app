@@ -23,6 +23,7 @@ var do_aerosol = function () {
 var do_pastilla = function () {
     $(".clean-aerosol").removeClass("fade");
     $("#pastilla").removeClass("fade");
+    $(".final-msj").css("display", "block");
     setTimeout(function(){
         $(".final-msj").removeClass("wipe");
         $("#pastilla").css("display", "none");
