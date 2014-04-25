@@ -10,7 +10,7 @@ function playAudio(url) {
 }
 
 var do_aerosol = function () {
-  $(".clean-aerosol").addClass("fade");
+    $(".clean-aerosol").addClass("fade");
     $("#aerosol").removeClass("fade");
     setTimeout(function(){
         $("#aerosol").css("display", "none");
@@ -32,6 +32,18 @@ var do_pastilla = function () {
     playAudio("bells-short.mp3");
 };
 
+
+var init = function () {
+  $(".clean-pastilla").removeClass("fade");
+  $(".clean-aerosol").removeClass("fade");
+  $("#aerosol").css("display", "block");
+  $("#aerosol").addClass("fade");
+}
+
+$(".final-msj").on("click", function () {
+    init();
+});
+
 $("#aerosol").on("click", function () {
     do_aerosol();
 });
@@ -40,6 +52,7 @@ $("#pastilla").on("click", function () {
     do_pastilla();
     $(this).css("display", "none");
 });
+
 
 setTimeout(function(){
        $("#aerosol").addClass("fade");
